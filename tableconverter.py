@@ -10,8 +10,7 @@ def csv_to_latex(csv_file, output_file):
     # Scrivo la tabella LaTeX nel file di output
     with open(output_file, "w") as f:
         f.write(latex_table)
-
-
+        
 # The user insert as input the csv file to convert
 input_csv_file = input('Insert the name of the csv file to convert:\n')
 # Output file: same filename but change the extension .csv to .tex 
