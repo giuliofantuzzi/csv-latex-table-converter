@@ -3,11 +3,11 @@
 import pandas as pd
 from tabulate import tabulate
 def csv_to_latex(csv_file, output_file):
-    # Leggo il file CSV utilizzando pandas
+    # Read csv file using pandas
     df = pd.read_csv(csv_file)
-    # Converto il DataFrame in una tabella LaTeX
+    # Convert dataframe into a LaTex tabular
     latex_table = tabulate(df, tablefmt="latex", headers="keys", showindex=False)
-    # Scrivo la tabella LaTeX nel file di output
+    # Write LaTex tablular into the output file
     with open(output_file, "w") as f:
         f.write(latex_table)
         
